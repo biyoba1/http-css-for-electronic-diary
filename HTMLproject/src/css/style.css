@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 1140;
+    margin: 0 auto;
+}
+
+
+.promo{
+    height: 1080px;
+    background: url('../img/bg/1679570685086.webp') center center/cover no-repeat;
+    padding: 39px 0 62px 0;
+}
+
+
+.logo .logo_img{
+    display: block;
+    margin: 0 auto;
+}
+
+.logo .logo_text{
+    color: #ffffff;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.table .text{
+    color: #ffffff;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 40px;
+    text-transform: uppercase;
+    margin-top: 40px;
+    text-align: center;
+}
+
+h1{
+    margin-top: 53px;
+}
+h2{
+  margin-top: 53px;
+}
+
+
+.title{
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 44px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 40px;
+}
+
+
+
+.simple .title_big{
+    color: #ffffff;
+    font-family: "Roboto - Black";
+    font-size: 80px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 21px;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Разрешаем перенос кнопок на новую строку */
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 2% 4%; /* Используем проценты для размеров кнопок */
+    font-size: 1.8vw; /* Используем вьюпортные ширины для размера шрифта */
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50px;
+    color: #e1f4f3;
+    background-color: #4CAF50;
+    border: none;
+    transition: background-color 0.3s;
+    margin: 2%; /* Используем проценты для отступов между кнопками */
+    margin-top: 4%;
+  }
+  
+  .button:hover {
+    background-color: #45a049;
+  }
+  
+  .method-post {
+    background: linear-gradient(45deg, #fb90b7, #45a049);
+  }
+  
+  .method-delete {
+    background: linear-gradient(45deg, #fb90b7, #45a049);
+  }
+  
+  .method-get {
+    background: linear-gradient(45deg, #fb90b7, #45a049);
+  }
+  
+  .text{
+    color: darkgray;
+    margin-top: 5%;
+     /* Используем проценты для отступа сверху */
+  }
+  
+  /* Медиа-запрос для смартфонов */
+  @media (max-width: 767px) {
+    .button-container {
+      flex-direction: column; /* Располагаем кнопки в столбец на смартфонах */
+      align-items: center; /* Центрируем кнопки по горизонтали */
+    }
+  
+    .button {
+      padding: 5% 10%; /* Изменяем размеры кнопок для мобильных устройств */
+      font-size: 5vw; /* Изменяем размер шрифта для мобильных устройств */
+      margin: 5%; /* Изменяем отступы между кнопками для мобильных устройств */
+    }
+  }
