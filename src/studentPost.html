@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POST</title>
+    <link rel="stylesheet" href="css/studentPost.css">
+</head>
+<body>
+    <section class="promo">
+        <div class="container">
+            <div class="logo">
+                <img src="img/bg/logo.png" alt="logo" class="logo_img">
+                <div class="logo_text">Electronic Diary<br>Добавить</div>
+            </div>
+        </div>
+         <div class="form">
+            <form id="myForm">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name"><br><br>
+        
+                <label for="secondName">Фамилия:</label>
+                <input type="text" id="secondName" name="secondName"><br><br>
+        
+                <label for="patronymic">Отчество:</label>
+                <input type="text" id="patronymic" name="patronymic"><br><br>
+        
+                <input type="button" value="Отправить" onclick="saveAndSend()">
+            </form>
+        </div>
+        <table id="studentsTable">
+            <thead>
+              <tr>
+                <th>Second Name</th>
+                <th>Name</th>
+                <th>Patronymic</th>
+              </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+          </table>
+          <script type="module" src="js/studentPOST.js"></script>
+           <script src="js/studentPOST.js"></script>
+
+    </section>
+</body>
+</html>

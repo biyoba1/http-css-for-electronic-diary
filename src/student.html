@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polytech</title>
+    <link rel="stylesheet" href="css/subject.css">
+</head>
+<body>
+    <section class="promo">
+        <div class="container">
+            <div class="logo">
+                <img src="img/bg/logo.png" alt="logo" class="logo_img">
+                <div class="logo_text">Electronic Diary<br>Студенты</div>
+            </div>
+            <div class="table">
+                <h1 class="text">Выберите Метод</h1>
+            </div>
+
+                <div class="button-container">
+                    <button onclick="console.log('Метод POST вызван'); window.location.href='studentPost.html'" class="button method-post">ВНЕСТИ</button>
+                    <button onclick="console.log('Метод DELETE вызван')" class="button method-delete">УДАЛИТЬ</button>
+                    <button onclick="console.log('Метод GET вызван')" class="button method-get">ПОЛУЧИТЬ</button>
+            </div>
+        </div>
+    </section>
+    <script src="js/student.js"></script>
+</body>
+</html>
