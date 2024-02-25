@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POST</title>
+    <link rel="stylesheet" href="css/subjectPost.css">
+</head>
+    <section class="promo">
+        <div class="container">
+            <div class="logo">
+                <img src="img/bg/logo.png" alt="logo" class="logo_img">
+                <div class="logo_text">Electronic Diary<br>Добавить</div>
+            </div>
+        </div>
+         <div class="form">
+            <form id="myForm">
+                <label for="name">Предмет:</label>
+                <input type="text" id="name" name="name"><br><br>   
+                <input type="button" value="Отправить" onclick="saveAndSend1()">
+                <input type="button" value="Удалить" onclick="deleteUser1()">
+            </form>
+        </div>
+        <table id="studentsTable">
+            <thead>
+              <tr>
+                <th>Предметы</th>
+              </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+          </table>
+          <script type="module" src="js/subjectPOST.js"></script>
+           <script src="js/subjectPOST.js"></script>
+
+        
+    </section>
+</body>
+</html>
