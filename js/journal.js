@@ -72,7 +72,7 @@ document.getElementById('grade-form').addEventListener('submit', async (event) =
   const dateInput = document.getElementById('datePicker').value;
   alert("Пользователь успешно добавлен!")
 
-  // Разделение данных на имя, фамилию и отчество
+ 
   const studentParts = studentInput.split(' ');
   const student = {
     firstName: studentParts[0],
@@ -80,7 +80,7 @@ document.getElementById('grade-form').addEventListener('submit', async (event) =
     middleName: studentParts[2] || ''
   };
 
-  // Отправка данных на сервер
+  
   const response = await fetch(`http://localhost:7080/grades?name=${student.lastName}&secondName=${student.firstName}&patronymic=${student.middleName}&subjectName=${subjectInput}&grade=${gradeInput}&date=${dateInput}`, {
     method: 'POST',
     headers: {
@@ -103,15 +103,15 @@ function fetchDataAndRenderTable() {
   fetch('http://localhost:7080/grades')
     .then(response => response.json())
     .then(data => {
-      console.log(data); // Added this line for debugging
+      console.log(data);
 
       const tableBody = document.getElementById('tableBody');
-      tableBody.innerHTML = ''; // Очистить содержимое таблицы перед обновлением
+      tableBody.innerHTML = ''; 
 
       if (Array.isArray(data.grades) && Array.isArray(data.all_students)) {
         data.all_students.forEach((student, index) => {
           const grade = data.grades[index];
-          const subject = data.subject[index % data.subject.length]; // Use the correct subject for each student
+          const subject = data.subject[index % data.subject.length]; 
           const date = data.date[index];
 
           const row = `<tr>
